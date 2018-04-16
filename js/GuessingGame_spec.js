@@ -93,16 +93,16 @@ describe("Game class", function() {
             it('throws an error if the number is invalid (less than 1, greater than 100, or not a number)', function() {
                 expect(function() {
                     game.playersGuessSubmission(0);
-                }).toThrow("That is an invalid guess.");
+                }).toThrowError('That is an invalid guess.');
                 expect(function() {
                     game.playersGuessSubmission(-1);
-                }).toThrow("That is an invalid guess.");
+                }).toThrowError('That is an invalid guess.');
                 expect(function() {
                     game.playersGuessSubmission(101);
-                }).toThrow("That is an invalid guess.");
+                }).toThrowError('That is an invalid guess.');
                 expect(function() {
                     game.playersGuessSubmission("not a number");
-                }).toThrow("That is an invalid guess.");
+                }).toThrowError('That is an invalid guess.');
             })
             it('calls checkGuess', function() {
                 spyOn(Game.prototype, 'checkGuess');

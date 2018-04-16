@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Guessing Game</title>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/GuessingGame.js"></script>
-    
+<head>
+  <title>Guessing Game</title>
 
-  </head>
-  <body>
-    
-    
-      <div id='app'>
-        <div class='center container-fluid'>
-          <div id='headers'>
-            <!-- Title and subtitles! -->
-            <h1>Guessing Game!</h1>
-            <h3>Guess a number between 1 and 100</h3>
-          </div>
-  
-          <div id='main'>
-            <div id='input-parent'>
-              <input id='players-input' class='center btn btn-lg' placeholder="#" maxlength='3' autofocus=autofocus></input>
-              <button id='submit' class="btn btn-success btn-lg">Go!</button>
-            </div>
-  
-            <div id='guesses' class='border-radius-large'>
-              <!-- unordered list of guesses -->
-              <ul id='guess-list'>
-                  <li id='guess'>_</li>
-                  <li id='guess'>_</li>
-                  <li id='guess'>_</li>
-                  <li id='guess'>_</li>
-                  <li id='guess'>_</li>
-              </ul>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div id="menu-btns">
-              <!-- reset and hint buttons -->
-                <button id='reset' class='btn btn-warning'>Reset</button>
-                <button id='hint' class='btn btn-info'>Hint</button> 
-            </div>
-          </div>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/GuessingGame.js"></script>
+
+
+</head>
+
+<body>
+
+
+  <div id='app'>
+    <div class='center container-fluid'>
+      <div id='headers'>
+        <!-- Title and subtitles! -->
+        <div id='title'>
+          <h1><span>Guessing Game!</span></h1>
+        </div>
+        <div id='subtitle'>
+          <h3><span>Guess a number between 1 and 100</span></h3>
+        </div>
       </div>
 
-    </div>
-    
-    <div id='footer'>
-        <div class='row'>
-          <div class='col-sm-4'>
-            <img src='img/fa-logo.png'></img>
-          </div>
-
-          <div class='col-sm-4'>
-            <h4>Project by Justin Hustrulid</h4>
-          </div>
-
-          <div class='col-sm-4' id='grace'>
-            <img src='img/grace_hopper_academy.png'></img>
-          </div>
+      <div id='main'>
+        <div id='input-parent'>
+          <input id='players-input' class='center btn btn-lg' placeholder="#" maxlength='3' autofocus=autofocus></input>
+          <button id='submit' class="btn btn-success btn-lg">Go!</button>
         </div>
 
+        <div id='guesses' class='border-radius-large'>
+          <!-- unordered list of guesses -->
+          <ul id='guess-list'>
+            <li class='guess'>_</li>
+            <li class='guess'>_</li>
+            <li class='guess'>_</li>
+            <li class='guess'>_</li>
+            <li class='guess'>_</li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="menu-btns">
+          <!-- reset and hint buttons -->
+          <button id='reset' class='btn btn-warning'>Reset</button>
+          <button id='hint' class='btn btn-info'>Hint</button>
+        </div>
+      </div>
     </div>
-    
-  </body>
+
+  </div>
+
+  <div id='footer'>
+    <div class='row'>
+      <div class='col-sm-4'>
+        <img src='img/fa-logo.png'></img>
+      </div>
+
+      <div class='col-sm-4'>
+        <h4>Project by Justin Hustrulid</h4>
+      </div>
+
+      <div class='col-sm-4' id='grace'>
+        <img src='img/grace_hopper_academy.png'></img>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
 </html>

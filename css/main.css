@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-#guess {
+.guess {
     list-style: none;
     display: inline;
     padding: 0 25px;
